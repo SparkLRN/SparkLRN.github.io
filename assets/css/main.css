@@ -1150,6 +1150,7 @@ figure {
   display: flex;
   width: 35px;
   height: 35px;
+  margin: 0.5em;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -1161,6 +1162,8 @@ figure {
   opacity: 0.6;
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
+  color: whitesmoke !important;
+  text-decoration: none;
 }
 
 .social-icon:hover {
