@@ -444,7 +444,7 @@ figure {
 }
 
 .services-top-text.big {
-  margin-bottom: 15px;
+  margin: 5px 0 15px 0;
   font-size: 19px;
   line-height: 26px;
 }
@@ -650,8 +650,13 @@ figure {
   margin-left: 10px;
 }
 
-.paragraph-gray {
+.paragraph-gray,
+.paragraph-gray a {
   color: hsla(0, 0%, 100%, .6);
+}
+
+.paragraph-gray a:hover {
+    color: rgba(31, 241, 196, 0.6)
 }
 
 .paragraph-gray.in-footer {
