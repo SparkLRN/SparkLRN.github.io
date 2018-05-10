@@ -600,21 +600,21 @@ figure {
 }
 
 .left-part._1 {
-  background-image: url("http://uploads.webflow.com/5a7d94ae2dbf1b0001dc27df/5a7de88cbc0c8000010fabd0_serv-2.jpg");
+  background-image: url("../img/flow/register.jpg");
   background-position: 100% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .left-part._2 {
-  background-image: url("http://uploads.webflow.com/5a7d94ae2dbf1b0001dc27df/5a7de85062eb3a0001b9dfe4_serv-1.jpg");
+  background-image: url("../img/flow/track.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .left-part._3 {
-  background-image: url("http://uploads.webflow.com/5a7d94ae2dbf1b0001dc27df/5a7dea3f214ab6000146e723_serv-3.jpg");
+  background-image: url("../img/flow/collaborate.jpg");
   background-position: 100% 50%;
   background-size: cover;
   background-repeat: no-repeat;
