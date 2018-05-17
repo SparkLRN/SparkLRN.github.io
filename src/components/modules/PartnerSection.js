@@ -5,7 +5,7 @@ class PartnerSection extends React.Component {
         return (
             <div className="content-wrapper">
                 <div id="partners" data-w-id="0008aa77-fb72-f227-08dc-7ea732a971ec" className="section gray overflow with-line">
-                    <div data-w-id="caf55f4c-ec09-4c93-2e5a-0db57afd5797" className="square"></div>
+                    {/* <div data-w-id="caf55f4c-ec09-4c93-2e5a-0db57afd5797" className="square"></div> */}
                     <div className="container w-container">
                         <div className="top-title">
                             <div className="align-center">
@@ -74,7 +74,7 @@ class PartnerSection extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div data-w-id="1ff2003f-fcb1-d647-cdce-08ad17e98a40" className="circle"></div>
+                    {/* <div data-w-id="1ff2003f-fcb1-d647-cdce-08ad17e98a40" className="circle"></div> */}
                 </div>
                 <div className="section gradient less-space">
                     <div className="container w-container">
