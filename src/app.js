@@ -2,8 +2,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import LandingPage from './components/pages/landingPage';
+
 render (
-    <div>
-        <h1>Hello Spark</h1>
-    </div>
-)
+    <LandingPage />, document.getElementById('app')
+);
