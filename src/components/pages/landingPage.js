@@ -3,6 +3,7 @@ import React from 'react';
 import {
     Header,
     HeroSection,
+    AboutSection,
     Footer
 } from  '../modules/exports'
 
@@ -12,6 +13,7 @@ class LandingPage extends React.Component {
             <div>
                 <Header />
                 <HeroSection />
+                <AboutSection />
                 <Footer />
             </div>
         );
