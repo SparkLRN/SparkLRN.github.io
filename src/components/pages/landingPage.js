@@ -6,13 +6,15 @@ import {
     AboutSection,
     PartnerSection,
     ContactSection,
-    Footer
+    Footer,
+    Preloader
 } from  '../modules/exports'
 
 class LandingPage extends React.Component {
     render () {
         return (
             <div>
+                {/* <Preloader /> */}
                 <Header />
                 <HeroSection />
                 <AboutSection />
