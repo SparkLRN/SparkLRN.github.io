@@ -4,6 +4,8 @@ import {
     Header,
     HeroSection,
     AboutSection,
+    PartnerSection,
+    ContactSection,
     Footer
 } from  '../modules/exports'
 
@@ -14,6 +16,8 @@ class LandingPage extends React.Component {
                 <Header />
                 <HeroSection />
                 <AboutSection />
+                <PartnerSection />
+                <ContactSection />
                 <Footer />
             </div>
         );
