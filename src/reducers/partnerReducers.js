@@ -2,7 +2,29 @@
 
 export function partnerReducers(
     state = {
-        partners: []
+        partners: [
+            {
+                id: 1,
+                title: 'Udacity',
+                description: 'some random description text',
+                url: "",
+                img_src: ""
+            },
+            {
+                id: 2,
+                title: 'Coursera',
+                description: 'some random description text',
+                url: "",
+                img_src: ""
+            },
+            {
+                id: 3,
+                title: 'Khan Academy',
+                description: 'some random description text',
+                url: "",
+                img_src: ""
+            },
+        ]
     }, action ){
         switch (action.type) {
             case "GET_PARTNERS":
@@ -13,16 +35,16 @@ export function partnerReducers(
                 return {partners: [...state.partners, ...action.payload]};
                 break;
             case "UPDATE_PARTNER":
-                const currentPartners = [...state.partners];
-                const indexToUpdate = currentPartners.findIndex(
+                let currentPartnersToUpdate = [...state.partners];
+                const indexToUpdate = currentPartnersToUpdate.findIndex(
                     partner => partner.id == action.payload.id
                 )
 
-                const oldParner = currentPartners[indexToUpdate];
+                const oldParner = currentPartnersToUpdate[indexToUpdate];
 
                 // create updated partner object
                 const updatedPartner = {
-                    ...currentPartners[indexToUpdate],
+                    ...currentPartnersToUpdate[indexToUpdate],
                     title: payload.title | oldPartner.title,
                     description: payload.description | oldPartner.description,
                     url: payload.url | oldPartner.url,
@@ -30,21 +52,21 @@ export function partnerReducers(
                 }
                 return {
                     partners: [
-                        ...currentPartners.slice(0, indexToUpdate),
+                        ...currentPartnersToUpdate.slice(0, indexToUpdate),
                         updatedPartner,
-                        ...currentPartners.slice(indexToUpdate+1)
+                        ...currentPartnersToUpdate.slice(indexToUpdate+1)
                     ]
                 };
                 break;
             case "DELETE_PARTNER":
-                const currentPartners = [...state.partners];
-                const indexToDelete = currentPartners.findIndex(
+                const currentPartnersToDelete = [...state.partners];
+                const indexToDelete = currentPartnersToDelete.findIndex(
                     partner => partner.id == action.payload.id
                 )
                 return {
                     partners: [
-                        ...currentPartners.slice(0, indexToDelete),
-                        ...currentPartners.slice(indexToDelete+1)
+                        ...currentPartnersToDelete.slice(0, indexToDelete),
+                        ...currentPartnersToDelete.slice(indexToDelete+1)
                     ]
                 };
                 break;
