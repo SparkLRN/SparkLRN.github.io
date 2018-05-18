@@ -8,9 +8,6 @@ import { logger } from 'redux-logger';
 // import combined reducers
 import reducers from './reducers/index';
 
-// import actions
-import { getPartners, postPartners, updatePartner, deletePartner } from "./actions/partnersActions";
-
 // import components
 import LandingPage from './components/pages/landingPage';
 

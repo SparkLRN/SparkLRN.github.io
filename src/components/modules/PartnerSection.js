@@ -1,10 +1,18 @@
 import React from 'react';
 
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 
 import { MailFunnel, Reviews } from "./exports";
 
+// import actions
+import { getPartners } from "../../actions/partnersActions";
+
 class PartnerSection extends React.Component {
+    componentDidMount () {
+        // dispatch get partners action
+        this.props.getPartners();
+    }
     render () {
         const partners = this.props.partners.map( partner => {
             return (
@@ -29,7 +37,7 @@ class PartnerSection extends React.Component {
                                 <div>
                                     <h1>Partners</h1>
                                 </div>
-                                <div className="sub-second-text">What are intergrated with the best of modern online education</div>
+                                <div className="sub-second-text">We are intergrated with the best of modern online education</div>
                             </div>
                         </div>
                         <div className="gallery align-center">
@@ -53,4 +61,10 @@ function mapStateToProps(state){
     }
 }
 
-export default connect(mapStateToProps)(PartnerSection);
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({
+        getPartners: getPartners
+    }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PartnerSection);
