@@ -5,5 +5,7 @@ import PartnerSection from './PartnerSection';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
 import Preloader from './Preloader';
+import MailFunnel from './MailFunnel';
+import Reviews from './Reviews';
 
-export { Header, HeroSection, AboutSection, PartnerSection, ContactSection, Footer, Preloader};
+export { Header, HeroSection, AboutSection, PartnerSection, ContactSection, Footer, Preloader, MailFunnel, Reviews};
