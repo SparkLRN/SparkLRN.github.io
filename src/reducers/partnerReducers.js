@@ -7,22 +7,22 @@ export function partnerReducers(
                 id: 1,
                 title: 'Udacity',
                 description: 'some random description text',
-                url: "",
-                img_src: ""
+                url: "https://www.udacity.com/",
+                img_src: "assets/img/udacity.png"
             },
             {
                 id: 2,
                 title: 'Coursera',
                 description: 'some random description text',
-                url: "",
-                img_src: ""
+                url: "https://www.coursera.org/",
+                img_src: "assets/img/coursera.png"
             },
             {
                 id: 3,
                 title: 'Khan Academy',
                 description: 'some random description text',
-                url: "",
-                img_src: ""
+                url: "https://www.khanacademy.org/",
+                img_src: "assets/img/khanacademy.jpg"
             },
         ]
     }, action ){

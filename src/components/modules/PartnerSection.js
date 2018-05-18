@@ -1,7 +1,21 @@
 import React from 'react';
+import { connect } from "react-redux";
 
 class PartnerSection extends React.Component {
     render () {
+        const partners = this.props.partners.map( partner => {
+            return (
+                <div className="content-box" key={partner.id}>
+                    <div className="card border-0 transform-on-hover">
+                        <img src={partner.img_src} alt="Khan Academy" className="card-img-top" />
+                        <div className="card-body grey">
+                            <h6><a href={partner.url} target="blank_">{partner.title}</a></h6>
+                            <p className="text-muted card-text">{partner.description}</p>
+                        </div>
+                    </div>
+                </div>
+            )
+        });
         return (
             <div className="content-wrapper">
                 <div id="partners" data-w-id="0008aa77-fb72-f227-08dc-7ea732a971ec" className="section gray overflow with-line">
@@ -17,60 +31,7 @@ class PartnerSection extends React.Component {
                         </div>
                         <div className="gallery align-center">
                             <div className="gallery-container">
-                                <div className="content-box">
-                                    <div className="card border-0 transform-on-hover">
-                                        <img src="assets/img/khanacademy.jpg" alt="Khan Academy" className="card-img-top"/>
-                                        <div className="card-body grey">
-                                            <h6><a href="#">Khan Academy</a></h6>
-                                            <p className="text-muted card-text">some random description text</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="content-box">
-                                    <div className="card border-0 transform-on-hover">
-                                        <img src="assets/img/udacity.png" alt="Udacity" className="card-img-top"/>
-                                        <div className="card-body">
-                                            <h6><a href="#">Udacity</a></h6>
-                                            <p className="text-muted card-text">some random description text</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="content-box">
-                                    <div className="card border-0 transform-on-hover">
-                                        <img src="assets/img/linkedin.jpg" alt="LinkedIn Learning" className="card-img-top"/>
-                                        <div className="card-body">
-                                            <h6><a href="#">LinkedIn Learning</a></h6>
-                                            <p className="text-muted card-text">some random description text</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="content-box">
-                                    <div className="card border-0 transform-on-hover">
-                                        <img src="assets/img/mva.jpg" alt="Microsoft Virtual Academy" className="card-img-top"/>
-                                        <div className="card-body">
-                                            <h6><a href="#">Microsoft Virtual Academy</a></h6>
-                                            <p className="text-muted card-text">some random description text</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="content-box">
-                                    <div className="card border-0 transform-on-hover">
-                                        <img src="assets/img/coursera.png" alt="Coursera" className="card-img-top"/>
-                                        <div className="card-body">
-                                            <h6><a href="#">Coursera</a></h6>
-                                            <p className="text-muted card-text">some random description text</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="content-box">
-                                    <div className="card border-0 transform-on-hover">
-                                        <img src="assets/img/edx.jpg" alt="EdX" className="card-img-top"/>
-                                        <div className="card-body">
-                                            <h6><a href="#">EdX</a></h6>
-                                            <p className="text-muted card-text">some random description text</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                {partners}
                             </div>
                         </div>
                     </div>
@@ -173,4 +134,10 @@ class PartnerSection extends React.Component {
     }
 }
 
-export default PartnerSection;
+function mapStateToProps(state){
+    return {
+        partners: state.partners.partners
+    }
+}
+
+export default connect(mapStateToProps)(PartnerSection);
