@@ -2,7 +2,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { logger } from 'redux-logger';
 
 // import combined reducers
@@ -20,7 +20,12 @@ class App extends React.Component{
         return (
             <Provider store={store}>
                 <Router>
-                    <Route exact path="/" name="Home" component={LandingPage} />
+                    <Switch>
+                        <Route exact path="/" name="Home" component={LandingPage} />
+                        <Route exact path="/login" name="Login" component={LoginPage} />
+                        <Route exact path="/register" name="Register" component={RegisterPage} />
+                        <Route exact path="/profile" name="Profile" component={ProfilePage} />
+                    </Switch>
                 </Router>
             </Provider>
         )

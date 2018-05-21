@@ -21,7 +21,7 @@ class Header extends React.Component {
                 </div>
                 <div className="div-block w-hidden-medium w-hidden-small w-hidden-tiny">
                     <nav role="navigation" className="nav-menu w-nav-menu">
-                        <a href="" className="nav-link w-nav-link">LogIn / SignUp</a>
+                        <a href="/login" className="nav-link w-nav-link">LogIn / SignUp</a>
                     </nav>
                 </div>
             </div>
