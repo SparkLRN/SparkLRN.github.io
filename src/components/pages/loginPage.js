@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Card, CardBody, CardGroup, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 
-class LoginPage extends Component {
+class LoginPage extends React.Component {
   render() {
     return (
       <div className="app flex-row align-items-center">
