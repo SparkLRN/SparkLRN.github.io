@@ -8,12 +8,12 @@ import { logger } from 'redux-logger';
 // import combined reducers
 import reducers from './reducers/index';
 
+// import pages
+import {LoginPage, RegisterPage, LandingPage, ProfilePage } from './components/pages/index';
+
 // create store with redux logger
 const middleware = applyMiddleware(logger);
 const store = createStore(reducers, middleware);
-
-// import pages
-import {LoginPage, RegisterPage, LandingPage, ProfilePage } from './components/pages/index';
 
 class App extends React.Component{
     render() {
