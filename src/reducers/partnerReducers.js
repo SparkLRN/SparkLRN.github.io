@@ -30,25 +30,23 @@ export function partnerReducers(
             case "GET_PARTNERS":
                 // API call to get all registered partners
                 return {...state, partners: [...state.partners]};
-                break;
             case "POST_PARTNERS":
                 return {partners: [...state.partners, ...action.payload]};
-                break;
             case "UPDATE_PARTNER":
                 let currentPartnersToUpdate = [...state.partners];
                 const indexToUpdate = currentPartnersToUpdate.findIndex(
-                    partner => partner.id == action.payload.id
+                    partner => partner.id === action.payload.id
                 )
 
-                const oldParner = currentPartnersToUpdate[indexToUpdate];
+                const oldPartner = currentPartnersToUpdate[indexToUpdate];
 
                 // create updated partner object
                 const updatedPartner = {
                     ...currentPartnersToUpdate[indexToUpdate],
-                    title: payload.title | oldPartner.title,
-                    description: payload.description | oldPartner.description,
-                    url: payload.url | oldPartner.url,
-                    img_src: payload.img_src | oldPartner.img_src
+                    title: action.payload.title | oldPartner.title,
+                    description: action.payload.description | oldPartner.description,
+                    url: action.payload.url | oldPartner.url,
+                    img_src: action.payload.img_src | oldPartner.img_src
                 }
                 return {
                     partners: [
@@ -57,11 +55,10 @@ export function partnerReducers(
                         ...currentPartnersToUpdate.slice(indexToUpdate+1)
                     ]
                 };
-                break;
             case "DELETE_PARTNER":
                 const currentPartnersToDelete = [...state.partners];
                 const indexToDelete = currentPartnersToDelete.findIndex(
-                    partner => partner.id == action.payload.id
+                    partner => partner.id === action.payload.id
                 )
                 return {
                     partners: [
@@ -69,7 +66,8 @@ export function partnerReducers(
                         ...currentPartnersToDelete.slice(indexToDelete+1)
                     ]
                 };
-                break;
+            default:
+                return state;
         }
         return state;
     }
