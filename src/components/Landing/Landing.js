@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles/Landing.css';
+
 import {
     Header,
     HeroSection,
@@ -8,9 +10,9 @@ import {
     ContactSection,
     Footer,
     Preloader
-} from  '../modules/exports'
+} from  './modules/index'
 
-class LandingPage extends React.Component {
+class Landing extends React.Component {
     render () {
         return (
             <div>
@@ -26,4 +28,4 @@ class LandingPage extends React.Component {
     }
 }
 
-export default LandingPage;
+export default Landing;

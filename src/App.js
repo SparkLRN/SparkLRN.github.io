@@ -9,7 +9,8 @@ import { logger } from 'redux-logger';
 import reducers from './reducers/index';
 
 // import pages
-import {LoginPage, RegisterPage, LandingPage, ProfilePage } from './components/pages/index';
+import {LoginPage, RegisterPage, ProfilePage } from './components/pages/index';
+import { Landing } from './components/index';
 
 // create store with redux logger
 const middleware = applyMiddleware(logger);
@@ -21,7 +22,7 @@ class App extends React.Component{
             <Provider store={store}>
                 <Router>
                     <Switch>
-                        <Route exact path="/" name="Home" component={LandingPage} />
+                        <Route exact path="/" name="Home" component={Landing} />
                         <Route exact path="/login" name="Login" component={LoginPage} />
                         <Route exact path="/register" name="Register" component={RegisterPage} />
                         <Route exact path="/profile" name="Profile" component={ProfilePage} />
