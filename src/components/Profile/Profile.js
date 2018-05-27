@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ProfilePage extends React.Component{
+class Profile extends React.Component{
     render (){
         return (
             <div>Profile page</div>
@@ -8,4 +8,4 @@ class ProfilePage extends React.Component{
     }
 }
 
-export default ProfilePage;
+export default Profile;
