@@ -2188,7 +2188,7 @@ html.w-mod-js *[data-ix="preloader"] {
 .content-box {
     width: 100%;    
 }
-.card {
+.content-box .card {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2209,13 +2209,13 @@ html.w-mod-js *[data-ix="preloader"] {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
   /* transform: translateY(-5px) scale(1.02); */
 }
-.card-img-top {
+.content-box .card-img-top {
   width: 100%;
   height: 80%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-.card-body {
+.content-box .card-body {
   width: 100%;
   height: 30%;
   -webkit-box-flex: 1;
@@ -2228,7 +2228,7 @@ html.w-mod-js *[data-ix="preloader"] {
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
-.card-body p {
+.content-box.card-body p {
     font-size: 15px;
 }
 .gallery h6 {
