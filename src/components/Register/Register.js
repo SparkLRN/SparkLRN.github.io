@@ -3,7 +3,7 @@ import { Button, Card, CardBody, CardFooter, Col, Container, Input, InputGroup, 
 
 import axios from 'axios';
 
-class RegisterPage extends Component {
+class Register extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -37,7 +37,7 @@ class RegisterPage extends Component {
     handleSubmit(e) {
         e.preventDefault();
 
-        if (this.state.match){
+        if (this.state.match) {
             const data = {
                 // username: this.state.username,
                 email: this.state.email,
@@ -112,4 +112,4 @@ class RegisterPage extends Component {
     }
 }
 
-export default RegisterPage;
+export default Register;
