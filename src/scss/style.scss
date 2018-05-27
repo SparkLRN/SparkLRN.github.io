@@ -1,0 +1,11 @@
+// Override variables here
+@import "variables";
+
+// Import COREUI styles
+@import "../../node_modules/@coreui/coreui/scss/coreui";
+
+// Temp fix for reactstrap
+@import 'node_modules/@coreui/coreui/scss/_dropdown-menu-right.scss';
+
+// If you want to add something do it here
+@import "custom";
