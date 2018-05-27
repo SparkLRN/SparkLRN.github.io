@@ -3,10 +3,10 @@ import React from 'react';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import { MailFunnel, Reviews } from "./exports";
+import { MailFunnel, Reviews } from "./index";
 
 // import actions
-import { getPartners } from "../../actions/partnersActions";
+import { getPartners } from "../../../actions/partnersActions";
 
 class PartnerSection extends React.Component {
     componentDidMount () {
