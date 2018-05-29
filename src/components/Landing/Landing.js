@@ -17,10 +17,12 @@ class Landing extends React.Component {
         return (
             <div>
                 {/* <Preloader /> */}
-                <Header />
-                <HeroSection />
-                <AboutSection />
-                <PartnerSection />
+                <div className="scroll">
+                    <Header />
+                    <HeroSection />
+                    <AboutSection />
+                    <PartnerSection />
+                </div>
                 <ContactSection />
                 <Footer />
             </div>
