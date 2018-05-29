@@ -7,23 +7,19 @@ import {
     HeroSection,
     AboutSection,
     PartnerSection,
-    ContactSection,
-    Footer,
-    Preloader
+    Footer
 } from  './modules/index'
 
 class Landing extends React.Component {
     render () {
         return (
             <div>
-                {/* <Preloader /> */}
                 <div className="scroll">
                     <Header />
                     <HeroSection />
                     <AboutSection />
                     <PartnerSection />
                 </div>
-                <ContactSection />
                 <Footer />
             </div>
         );

@@ -13,7 +13,6 @@ class Header extends React.Component {
                         <a href="#about" className="nav-link w-nav-link">About</a>
                         <a href="#partners" className="nav-link w-nav-link">Partners</a>
                         <a href="#reviews" className="nav-link w-nav-link">Reviews</a>
-                        <a href="#contact" className="nav-link w-nav-link">Contact</a>
                     </nav>
                     <div className="menu-button w-nav-button">
                         <div className="w-icon-nav-menu"></div>
