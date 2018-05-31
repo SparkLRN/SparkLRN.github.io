@@ -8,7 +8,7 @@ class Header extends React.Component {
                     <img src="assets/img/logo9.png" width="100" />
                 </a>
                 <div className="container w-container">
-                    <nav role="navigation" className="nav-menu w-nav-menu">
+                    <nav className="nav-menu w-nav-menu">
                         <a href="#home" className="nav-link w-nav-link">Home</a>
                         <a href="#about" className="nav-link w-nav-link">About</a>
                         <a href="#partners" className="nav-link w-nav-link">Partners</a>

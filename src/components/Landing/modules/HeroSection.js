@@ -22,7 +22,7 @@ class HeroSection extends React.Component {
                                         <div className="sub-second-text white full">We are your learning partner <br /> guiding you and motivating you through all your learning adventures.</div>
                                     </div>
                                     <div className="top-margin">
-                                        <a href="#" className="button w-button">Get Started</a>
+                                        <a href="/register" className="button w-button">Get Started</a>
                                     </div>
                                 </div>
                             </div>
