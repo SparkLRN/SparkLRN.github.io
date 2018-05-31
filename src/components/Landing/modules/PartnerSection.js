@@ -3,6 +3,8 @@ import React from 'react';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
+import { Row, Card, CardBody, CardImg, CardTitle } from "reactstrap";
+
 import { MailFunnel, Reviews } from "./index";
 
 // import actions
@@ -16,15 +18,14 @@ class PartnerSection extends React.Component {
     render () {
         const partners = this.props.partners.map( partner => {
             return (
-                <div className="content-box" key={partner.id}>
-                    <div className="card border-0 transform-on-hover">
-                        <img src={partner.img_src} alt="Khan Academy" className="card-img-top" />
-                        <div className="card-body grey">
-                            <h6><a href={partner.url} target="blank_">{partner.title}</a></h6>
-                            <p className="text-muted card-text">{partner.description}</p>
-                        </div>
-                    </div>
-                </div>
+                <Card className="partner">
+                    <CardImg top width="100%" src={partner.img_src} alt={partner.title} />
+                    <CardBody className="textarea">
+                        <a href={partner.url} target="blank_">
+                            <CardTitle>{partner.title}</CardTitle>
+                        </a>
+                    </CardBody>
+                </Card>
             )
         });
         return (
@@ -41,9 +42,7 @@ class PartnerSection extends React.Component {
                             </div>
                         </div>
                         <div className="gallery align-center">
-                            <div className="gallery-container">
-                                {partners}
-                            </div>
+                            <Row className="justify-content-center">{partners}</Row>
                         </div>
                     </div>
                     {/* <div data-w-id="1ff2003f-fcb1-d647-cdce-08ad17e98a40" className="circle"></div> */}
