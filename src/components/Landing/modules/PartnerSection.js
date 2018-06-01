@@ -18,7 +18,7 @@ class PartnerSection extends React.Component {
     render () {
         const partners = this.props.partners.map( partner => {
             return (
-                <Card className="partner">
+                <Card key={partner.id} className="partner">
                     <CardImg top width="100%" src={partner.img_src} alt={partner.title} />
                     <CardBody className="textarea">
                         <a href={partner.url} target="blank_">
