@@ -3321,7 +3321,7 @@ html.w-mod-js *[data-ix="preloader"] {
   .gallery .partner {
     margin: 20px;
     transition: 0.15s ease-in-out;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); }
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); }
     .gallery .partner .textarea {
       background-color: whitesmoke !important;
       border-radius: 0 0 4px 4px; }
