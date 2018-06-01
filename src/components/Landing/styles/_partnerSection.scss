@@ -1,0 +1,26 @@
+
+/* Partner Gallery */
+
+.gallery {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .partner {
+        margin: 20px;
+        transition: 0.15s ease-in-out;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+        .textarea {
+            background-color: whitesmoke !important;
+            border-radius: 0 0 4px 4px;
+            a {
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    .partner:hover {
+        transform: translateY(-10px) scale(1.02);
+    }
+}

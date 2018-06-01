@@ -75,10 +75,11 @@ class Footer extends React.Component {
                                     <a href="#about" className="link">About</a>
                                     <a href="#partners" className="link">Partners</a>
                                     <a href="#reviews" className="link">Reviews</a>
-                                    <a href="#contact" className="link">Contact</a>
                                     <br />
-                                    <a href="" className="link">LogIn</a>
-                                    <a href="" className="link">Privacy</a>
+                                    <a href="/login" className="link">LogIn</a>
+                                    <a href="/register" className="link">SignUp</a>
+                                    <br />
+                                    <a href="/privacy" className="link">Privacy</a>
                                 </div>
                             </div>
                         </div>

@@ -5,24 +5,45 @@ export function partnerReducers(
         partners: [
             {
                 id: 1,
-                title: 'Udacity',
-                description: 'some random description text',
-                url: "https://www.udacity.com/",
-                img_src: "assets/img/udacity.png"
-            },
-            {
-                id: 2,
-                title: 'Coursera',
-                description: 'some random description text',
-                url: "https://www.coursera.org/",
-                img_src: "assets/img/coursera.png"
-            },
-            {
-                id: 3,
                 title: 'Khan Academy',
                 description: 'some random description text',
                 url: "https://www.khanacademy.org/",
-                img_src: "assets/img/khanacademy.jpg"
+                img_src: "assets/images/partners/khanacademy.jpg"
+            },
+            {
+                id: 2,
+                title: 'Udacity',
+                description: 'some random description text',
+                url: "https://www.udacity.com/",
+                img_src: "assets/images/partners/udacity.jpg"
+            },
+            {
+                id: 3,
+                title: 'LinkedIn Learning',
+                description: 'some random description text',
+                url: "https://www.linkedin.com/learning/",
+                img_src: "assets/images/partners/linkedin.jpg"
+            },
+            {
+                id: 4,
+                title: 'Coursera',
+                description: 'some random description text',
+                url: "https://www.coursera.org/",
+                img_src: "assets/images/partners/coursera.jpg"
+            },
+            {
+                id: 5,
+                title: 'EDX',
+                description: 'some random description text',
+                url: "https://www.edx.org/",
+                img_src: "assets/images/partners/edx.jpg"
+            },
+            {
+                id: 6,
+                title: 'Microsoft Virtual Academy',
+                description: 'some random description text',
+                url: "https://mva.microsoft.com/",
+                img_src: "assets/images/partners/mva.jpg"
             },
         ]
     }, action ){
