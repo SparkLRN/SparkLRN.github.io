@@ -56,10 +56,10 @@ class Reviews extends React.Component {
                                 { reviews }
                             </div>
                             <div className="right-arrow w-slider-arrow-left">
-                                <img src="assets/img/arrow-left.svg" width="200" />
+                                <img src="assets/img/arrow-left.svg" alt="" width="200" />
                             </div>
                             <div className="right-arrow w-slider-arrow-right">
-                                <img src="assets/img/arrow-right.svg" />
+                                <img src="assets/img/arrow-right.svg" alt="" />
                             </div>
                             <div className="slide-nav w-slider-nav w-round"></div>
                         </div>

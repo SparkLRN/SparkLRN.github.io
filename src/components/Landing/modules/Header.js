@@ -5,7 +5,7 @@ class Header extends React.Component {
         return (
             <div data-collapse="medium" data-animation="default" data-duration="400" className="navigation w-nav">
                 <a href="/" className="w-nav-brand">
-                    <img src="assets/img/logo9.png" width="100" />
+                    <img src="assets/img/logo9.png" alt="Spark" width="100" />
                 </a>
                 <div className="container w-container">
                     <nav className="nav-menu w-nav-menu">
@@ -19,7 +19,7 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <div className="div-block w-hidden-medium w-hidden-small w-hidden-tiny">
-                    <nav role="navigation" className="nav-menu w-nav-menu">
+                    <nav className="nav-menu w-nav-menu">
                         <a href="/login" className="nav-link w-nav-link">LogIn / SignUp</a>
                     </nav>
                 </div>

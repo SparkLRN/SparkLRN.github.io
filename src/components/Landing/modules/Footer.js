@@ -9,20 +9,20 @@ class Footer extends React.Component {
                         <div className="w-col w-col-4">
                             <div className="footer-column-wrapper">
                                 <a href="#home" className="w-inline-block">
-                                    <img src="assets/img/logo9.png" width="100" sizes="100px" />
+                                    <img src="assets/img/logo9.png" alt="Spark" width="100" sizes="100px" />
                                 </a>
                                 <div className="top-margin">
                                     <p className="paragraph-gray in-footer">We &#x27;re your lifelong learning partner,<br />guiding you and motivating you through all your learning adventures.</p>
                                 </div>
                                 <div className="top-margin">
                                     <div className="social-wrapper left">
-                                        <a href="#" className="social-icon w-inline-block">
+                                        <a href="" className="social-icon w-inline-block">
                                             <i className="fab fa-facebook fa-2x"></i>
                                         </a>
-                                        <a href="#" className="social-icon w-inline-block">
+                                        <a href="" className="social-icon w-inline-block">
                                             <i className="fab fa-twitter-square fa-2x"></i>
                                         </a>
-                                        <a href="#" className="social-icon w-inline-block">
+                                        <a href="" className="social-icon w-inline-block">
                                             <i className="fab fa-slack fa-2x"></i>
                                         </a>
                                     </div>

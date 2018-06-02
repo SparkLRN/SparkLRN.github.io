@@ -4,7 +4,7 @@ class Preloader extends React.Component {
     render () {
         return (
             <div className="preloader" data-ix="preloader">
-                <img src="assets/img/preloader.svg" width="50" />
+                <img src="assets/img/preloader.svg" alt="" width="50" />
             </div>
         );
     }

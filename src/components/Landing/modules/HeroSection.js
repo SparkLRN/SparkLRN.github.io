@@ -52,7 +52,7 @@ class HeroSection extends React.Component {
                         </div>
                         <div className="align-center">
                             <a href="#about" className="arrow-down w-inline-block">
-                                <img src="assets/img/arrow-down.svg" width="70"/>
+                                <img src="assets/img/arrow-down.svg" alt="" width="70"/>
                             </a>
                         </div>
                     </div>

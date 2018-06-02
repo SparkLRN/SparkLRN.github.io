@@ -1,4 +1,4 @@
-// Partner reducers
+  // Partner reducers
 
 export function partnerReducers(
     state = {
@@ -90,5 +90,4 @@ export function partnerReducers(
             default:
                 return state;
         }
-        return state;
     }
