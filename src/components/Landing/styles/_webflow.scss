@@ -717,60 +717,6 @@
   opacity: 1;
 }
 
-.team-wrapper {
-  position: relative;
-  z-index: 20;
-  display: block;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 40px;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 0 20px 100px -20px rgba(0, 0, 0, .1);
-  text-align: center;
-}
-
-.team-wrapper.pricing {
-  width: 95%;
-  box-shadow: 0 20px 100px -20px rgba(0, 0, 0, .2);
-}
-
-.relative-div {
-  position: relative;
-}
-
-.team-photo {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
-  border-radius: 100%;
-  background-image: url("http://uploads.webflow.com/5a7d94ae2dbf1b0001dc27df/5a8097d9ee248c00013921d5_team-2.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .3);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.team-photo._2 {
-  background-image: url("http://uploads.webflow.com/5a7d94ae2dbf1b0001dc27df/5a8097e8432d43000115dea2_team-1.jpg");
-}
-
-.team-photo._3 {
-  background-image: url("http://uploads.webflow.com/5a7d94ae2dbf1b0001dc27df/5a809851c794270001340fd4_team-4.jpg");
-  background-position: 50% 0px;
-}
-
-.team-photo._4 {
-  background-image: url("http://uploads.webflow.com/5a7d94ae2dbf1b0001dc27df/5a8097f5ee248c0001392258_team-3.jpg");
-  background-size: cover;
-}
-
 .logo-brand {
   display: -webkit-box;
   display: -webkit-flex;
@@ -807,11 +753,6 @@
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.team-title {
-  margin-bottom: 5px;
-  color: #212127;
 }
 
 .phone-number {
@@ -1710,12 +1651,7 @@ html.w-mod-js *[data-ix="preloader"] {
   .square {
     display: none;
   }
-  .team-wrapper {
-    margin-bottom: 20px;
-  }
-  .team-wrapper.pricing {
-    width: 70%;
-  }
+
   .logo-brand {
     width: 33.333%;
     float: left;
@@ -1857,9 +1793,6 @@ html.w-mod-js *[data-ix="preloader"] {
   .right-arrow {
     display: none;
   }
-  .team-wrapper.pricing {
-    width: 90%;
-  }
   .logo-brand {
     width: 50%;
   }
@@ -1941,9 +1874,6 @@ html.w-mod-js *[data-ix="preloader"] {
   .project-title {
     font-size: 20px;
     line-height: 30px;
-  }
-  .team-wrapper.pricing {
-    width: 100%;
   }
   .logo-brand {
     width: 100%;
